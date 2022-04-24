@@ -1,0 +1,25 @@
+footer {
+    margin-top: auto;
+    height: var(--footer-height);
+    background-color: #55555e;
+    padding: 0 var(--page-padding);
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: #d3d3d3;
+  }
+
+  .footer-menu {
+      display: flex;
+      gap: 10px;
+  }

@@ -1,0 +1,20 @@
+.stat {
+    width: 100%;
+}
+
+.stat-figure {
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--blue-main)
+}
+
+.stat-caption {
+    font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+    .stat {
+        width: 30%;
+    }
+}

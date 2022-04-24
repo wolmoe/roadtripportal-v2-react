@@ -1,0 +1,50 @@
+.home-card {
+    background-color: var(--mint-accent);
+    padding-bottom: 40px;
+    height: 18em;
+    width: 48%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home-card-btn {
+    background-color: transparent;
+    border: 3px solid var(--blue-main);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px 7px 15px;
+}
+
+.home-card-btn:hover {
+    background-color: var(--blue-main);
+}
+
+#home-card-routes {
+    background-image: var(--homepage-routes);
+    background-size: cover;
+}
+
+#home-card-plan {
+    background-image: var(--homepage-plan);
+    background-size: cover;
+}
+
+#home-card-otr {
+    background-image: var(--homepage-otr);
+    background-size: cover;
+}
+
+#home-card-shop {
+    background-image: var(--homepage-shop);
+    background-size: cover;
+}
+
+@media (min-width: 1024px) {
+    .home-card {
+        width: 23%;
+        height: 20em;
+    }
+}

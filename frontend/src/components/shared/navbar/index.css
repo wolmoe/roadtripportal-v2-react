@@ -1,0 +1,152 @@
+.navbar {
+    padding-bottom: 10px;
+}
+
+.logo {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 1.5em auto;
+}
+
+.search-icon {
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+.nav-toggle-icon,
+.logo {
+    color: #515151;
+    text-decoration: none;
+}
+
+.nav-open {
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+    right: 1.5rem;
+    top: 10px;
+}
+
+.ham-bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #515151;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.bar-one,
+.bar-three {
+    transform: rotate(0);
+}
+
+.bar-two {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.bar-one.open {
+    transform: rotate(45deg);
+    background-color: #ffffff;
+}
+
+.bar-two.open {
+    opacity: 0;
+    transform: translateX(20px);
+    background-color: #ffffff;
+}
+
+.bar-three.open {
+    transform: rotate(-45deg);
+    background-color: #ffffff;
+}
+
+.active {
+    display: block;
+}
+
+.nav-bg {
+    background-image: linear-gradient(260deg, var(--blue-main) 0%, var(--green-accent) 100%);
+}
+
+@media (min-width: 1300px) {
+
+    /* Style Navbar */
+    .navbar {
+        background-image: none;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .logo,
+    .nav-links {
+        color: #515151;
+    }
+
+    .nav-links:hover {
+        color: #7a8896;
+    }
+
+    .search-icon {
+        fill: #515151;
+    }
+
+    .nav-search:hover {
+        fill: #7a8896;
+    }
+}

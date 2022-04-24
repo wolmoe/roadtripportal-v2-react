@@ -1,0 +1,30 @@
+.hero {
+    height: 100vh;
+    background-color: var(--mint-accent);
+    background-image: url("../../../images/roadtripportal-hero-image-car-on-beach-road.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-heading {
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: var(--green-accent);
+  }
+  
+  .hero-button {
+    margin-bottom: 50px;
+  }
+
+@media (min-width: 1300px) {
+    .hero-heading {
+        font-size: 65px;
+    }
+}
