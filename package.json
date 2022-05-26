@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/wolmoe/roadtripportal-v2-react#readme",
   "devDependencies": {
-    "concurrently": "^7.1.0"
+    "concurrently": "^7.2.1"
   }
 }

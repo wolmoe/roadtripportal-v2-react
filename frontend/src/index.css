@@ -14,6 +14,7 @@ code {
 
 /* CSS Variables */
 :root {
+  /* Dimensions */
   --footer-height: 60px;
   --max-width: 1200px;
   --page-padding: 20px;
@@ -161,47 +162,6 @@ h2 {
   height: 300px;
 }
 
-/* Roadtrip Cards Styling */
-.roadtrips-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin-top: 20px;
-}
-
-.card {
-  flex: 0 100%;
-  margin-bottom: 2%;
-  /* (100-32*3)/2 */
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-header {
-  height: 150px;
-}
-
-.card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-body {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.card-meta {
-  margin-bottom: 20px;
-}
-
 /* Showpage styles*/
 .roadtrip-image {
   max-width: 500px;
@@ -254,6 +214,10 @@ label {
   border: 1px solid var(--red-shade);
 }
 
+@media (min-width: 768px) {
+
+}
+
 @media (min-width: 1024px) {
 
   .placeholder {
@@ -263,7 +227,4 @@ label {
 
 @media (min-width: 1300px) {
 
-  .card {
-      flex: 0 32%;
-  }
 }
